@@ -1,0 +1,207 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+    --branco: #ffffff;
+}
+body{
+    background-color: var(--preta);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+.titulos{
+    position: fixed;
+    background-color: var(--preta);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.blocoLeft a{
+    color: var(--branco);
+    text-decoration: none;
+    padding-inline: 15px;
+    cursor: pointer;
+}
+.blocoLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.blocoLeft:hover{
+    color: #e6e6e6;
+}
+.blocoRight{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 930px;
+}
+.blocoRight:hover{
+    color: #e6e6e6;  
+}
+.blocoRight p{
+    color: var(--branco);
+    float: right;
+    font-size: 14px;
+    padding-left: 30px;
+    cursor: pointer;    
+}
+.logo{
+    height: 25px;
+    margin: 20px 40px;
+    cursor: pointer;
+}
+#search{
+    color: var(--branco);
+    float: right;
+    cursor: pointer;
+}
+.gift{
+    height: 25px;
+    float: right;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.bell{
+    height: 25px;
+    float: right;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.perfil{
+    height: 35px;
+    float: right;
+    padding-left: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.filmePrincipal{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.20)100%), url(/img/filmes/no-limite-do-amanha-2.jpg );
+    height: 900px;
+    background-size: cover;
+}
+.filmePrincipal p{
+    width: 800px;
+    color: var(--branco);
+    font-size: 1.8rem;
+    text-align: justify;
+    padding: 0 50px;
+}
+.filmeLogo{
+    padding: 200px 50px;
+    height: 500px;   
+}
+.buttons{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+#buttonView{
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--branco);
+    color: var(--preta);
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+#buttonView p{
+    color: var(--preta);
+    position: absolute;
+    padding-left: 70px;
+    font-size: 1.4rem;
+}
+#buttonView img{
+   height: 40px;
+   padding-left: 20px;
+}
+#buttonView:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#buttonInfo{
+    height: 60px;
+    width: 300px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(124, 124, 124, .8);
+    color: var(--branco);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+#buttonInfo:hover{
+    background-color: rgba(124, 124, 124, .5);
+}
+#buttonInfo img{
+    height: 34px;
+    padding-left: 15px;
+}
+#buttonInfo p{
+    margin-left: 2px;
+    position: absolute;
+    padding-left: 70px;
+    font-size: 1.4rem;
+}
+.netflix{
+    background-color: var(--preta); 
+}
+.swiper-container{
+    height: 100%;
+    width: 100%;
+    transition: .3s ease all;
+    background-color: var(--preta);
+}
+.swiper-slide{
+    text-align: center;
+    background: var(--preta);
+    display:  -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition:  250ms all;
+}
+.swiper-slide :first-child:hover{
+    margin: 0 30px;
+}
+.swiper-slide :last-child:hover{
+    margin: 0 -30px;
+}
+.swiper-slide :nth-child(12):hover{
+    margin: 0 -30px;
+}
+.swiper-slide:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+::after{
+    color: var(--branco);
+}
+h2{
+    color: var(--branco);
+    padding: 20px 0 10px 20px;
+}
+.swiper-wrapper{
+    padding: 20px 0;
+}
