@@ -6,6 +6,8 @@
 body{
     background-color: var(--preta);
     font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    height: 100vh;
     
 }
 .titulos{
@@ -15,12 +17,16 @@ body{
     flex-direction: row;
     align-items: center;
     width: 100%;
+    max-width: ;
+    margin: auto;
+
 }
 .blocoLeft a{
     color: var(--branco);
     text-decoration: none;
-    padding-inline: 15px;
     cursor: pointer;
+    padding-inline: 15px;
+
 }
 .blocoLeft{
     display: flex;
@@ -34,7 +40,8 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 930px;
+    float: right;
+    margin-left: 40%;
 }
 .blocoRight:hover{
     color: #e6e6e6;  
@@ -76,23 +83,27 @@ body{
     cursor: pointer;
 }
 .filmePrincipal{
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.20)100%), url(/img/filmes/no-limite-do-amanha-2.jpg );
-    height: 900px;
+    background: url(/img/filmes/no-limite-do-amanha-2.png );
+    height: 100%;
     background-size: cover;
+    
 }
-.filmePrincipal p{
+#sinopse{
     width: 800px;
     color: var(--branco);
     font-size: 1.8rem;
     text-align: justify;
-    padding: 0 50px;
+    padding-top: 440px;
+    padding-left: 50px;
+    
+
 }
 .filmeLogo{
     padding: 200px 50px;
     height: 500px;   
 }
 .buttons{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 50px;
     width: 800px;
     display: flex;
@@ -110,7 +121,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: relative;
+   
 }
 #buttonView p{
     color: var(--preta);
@@ -136,7 +147,12 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: relative;
+    
+}
+#buttonInfo p{
+    margin-left: 2px;
+    padding-left: 30px;
+    font-size: 1.4rem;
 }
 #buttonInfo:hover{
     background-color: rgba(124, 124, 124, .5);
@@ -145,12 +161,7 @@ body{
     height: 34px;
     padding-left: 15px;
 }
-#buttonInfo p{
-    margin-left: 2px;
-    position: absolute;
-    padding-left: 70px;
-    font-size: 1.4rem;
-}
+
 .netflix{
     background-color: var(--preta); 
 }
@@ -205,4 +216,66 @@ h2{
 }
 .swiper-wrapper{
     padding: 20px 0;
+}
+@media screen and (max-width:1500px){
+    body{
+
+    }
+    header .container{
+        display: flex;
+    }
+    
+    .logo{
+        height: 30px;
+    }
+    .blocoRight{
+        margin-left: 20%;
+    }
+   
+}
+@media screen and (max-width:1000px){
+    
+    header .container{
+        display: flex;
+    }
+    
+    .sinopse{
+        font-size: .8rem;
+        width: 90%;
+        padding-top:10px;
+    }
+    .logo{
+        height: 30px;
+    }
+    .blocoRight{
+        display: none;
+    }
+   
+}
+@media screen and (max-width:500px){
+    body{
+        height: 30vh;
+    }
+    header .container{
+        display: flex;
+    }
+    h2{
+        font-size: .8em;
+    }
+    
+    .sinopse{
+        font-size: .8rem;
+        width: 90%;
+        padding-top: 0px;
+    }
+    .logo{
+        height: 30px;
+    }
+    .blocoRight{
+        margin-left: 10%;
+    }
+    .buttons{
+        width: 300px;
+    }
+    
 }
