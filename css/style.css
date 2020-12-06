@@ -6,7 +6,7 @@
 body{
     background-color: var(--preta);
     font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
+    
 }
 .titulos{
     position: fixed;
@@ -194,6 +194,7 @@ body{
 .swiper-slide:hover{
     transform: scale(1.2);
     z-index: 1;
+    transition: .6s ease all;
 }
 ::after{
     color: var(--branco);
