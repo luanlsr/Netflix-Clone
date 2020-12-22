@@ -17,7 +17,7 @@ body{
     flex-direction: row;
     align-items: center;
     width: 100%;
-    max-width: ;
+    
     margin: auto;
 
 }
@@ -26,15 +26,17 @@ body{
     text-decoration: none;
     cursor: pointer;
     padding-inline: 15px;
-
 }
 .blocoLeft{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.blocoLeft:hover{
-    color: #e6e6e6;
+.blocoLeft a:hover{
+    color: #aaaaaa;
+}
+.blocoLeft img:hover{
+    filter: opacity(.8);
 }
 .blocoRight{
     display: flex;
@@ -43,8 +45,11 @@ body{
     float: right;
     margin-left: 40%;
 }
-.blocoRight:hover{
-    color: #e6e6e6;  
+.blocoRight p:hover{
+    color: #aaaaaa;  
+}
+.blocoRight img, span:hover{
+    filter: opacity(.8);
 }
 .blocoRight p{
     color: var(--branco);
@@ -150,8 +155,8 @@ body{
     
 }
 #buttonInfo p{
-    margin-left: 2px;
-    padding-left: 30px;
+    position: absolute;
+    padding-left: 70px;
     font-size: 1.4rem;
 }
 #buttonInfo:hover{
